@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f4">
+    <title>Corner Shop — Simple Online Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" data-view="home" aria-label="Corner Shop home">
+        <span class="brand-mark">c.</span><span>corner<span class="brand-light">shop</span></span>
+      </a>
+      <form class="header-search" id="search-form" role="search">
+        <label class="sr-only" for="site-search">Search products</label>
+        <span aria-hidden="true">⌕</span>
+        <input id="site-search" name="query" placeholder="Search for something nice..." autocomplete="off">
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+      <nav class="header-actions" aria-label="Main navigation">
+        <button class="icon-link" data-view="wishlist" aria-label="Wishlist">♡ <span class="nav-label">Wishlist</span></button>
+        <button class="icon-link" data-view="cart" aria-label="Shopping cart">♧ <span class="nav-label">Bag</span> <span class="count-badge" id="cart-count">0</span></button>
+        <button class="account-link" data-view="login" id="account-link">Sign in</button>
+      </nav>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" data-view="home"><span class="brand-mark">c.</span><span>corner<span class="brand-light">shop</span></span></a>
+      <span>A little shop for the things you love.</span>
+      <span>Simple, thoughtful, yours.</span>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
